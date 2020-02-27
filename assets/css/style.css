@@ -19,7 +19,7 @@ body {
   padding-top: 200px;
 }
 header {
-    display: flex;
+    display: none;
     justify-content: space-between;
     padding: 10px;
     height: 20vh;
