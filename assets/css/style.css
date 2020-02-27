@@ -1,39 +1,29 @@
 body {
-    background-color: #0A0A0A;
-    background-image: url('../svg/fond_engranage.svg');
-    background-size: cover;
+    background-color: white;
     margin: 0;
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-    color: white;
+    color: black;
     text-align: center;
 }
-img {
-  -webkit-filter: drop-shadow(5px 5px 5px #222 );
-  filter: drop-shadow(5px 5px 5px #222);
+
+#couverture {
+  background-image: url('../images/photo_partage.jpeg');
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+#couverture img {
+  -webkit-filter: drop-shadow(5px 5px 5px black );
+  filter: drop-shadow(5px 5px 5px black);
+  margin: 0 auto;
+  padding-top: 200px;
 }
 header {
     display: flex;
     justify-content: space-between;
     padding: 10px;
-}
-.coin img {
-    width: 100px;
-    height: 100px;
-}
-.coin2 img {
-    width: 100px;
-    height: 100px;
-    transform: rotate(90deg);
-}
-.coin3 img {
-    width: 100px;
-    height: 100px;
-    transform: rotate(-90deg);
-}
-.coin4 img {
-    width: 100px;
-    height: 100px;
-    transform: rotate(180deg);
+    height: 20vh;
+    background-color: #E6E7E8;
 }
 .logo {
     width: 35%;
