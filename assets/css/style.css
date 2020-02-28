@@ -3,69 +3,104 @@ body {
     margin: 0;
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     color: black;
-    text-align: center;
 }
 
 #couverture {
-  background-image: url('../images/photo_partage.jpeg');
+  background-image: url('../images/photo_partage_claire.jpg');
   background-size: cover;
   height: 100vh;
   width: 100%;
 }
 #couverture img {
-  -webkit-filter: drop-shadow(5px 5px 5px black );
-  filter: drop-shadow(5px 5px 5px black);
+  -webkit-filter: drop-shadow(-3px -3px white);
+  filter: drop-shadow(-3px -3px white);
+  display: block;
   margin: 0 auto;
-  padding-top: 200px;
+  padding-top: 10%;
 }
 header {
-    display: none;
-    justify-content: space-between;
-    padding: 10px;
-    height: 20vh;
-    background-color: #E6E7E8;
+  display: flex;
+  justify-content: center;
+  height: 50vh;
+  background-color: #E6E7E8;
 }
 .logo {
-    width: 35%;
-    margin: auto;
+  width: 45%;
+  margin: auto;
 }
-.logo img {
-    width: 100%;
-    max-width: 200px;
+#monstre {
+  width: 30%;
+  vertical-align: middle;
 }
-#marseilleRue {
-    width: 100%;
-    height: 60vh;
-    background-image: url('../images/monaje_calles.png');
-    background-size: cover;
-    background-position: 0 0;
-    background-repeat: repeat-x;
-    animation: mouvement 10s linear infinite;
+header div {
+  display: table;
+  height: 100%;
 }
-#marseilleRue img {
-    width: 200px;
-    margin: auto;
-    padding-top: 190px;
-    display: block;
+header span {
+  display: table-cell;
+  vertical-align: middle;
+}
+header h3 {
+  color: black;
+  font-size: 7vmin;
+  text-align: center;
+  margin: 0;
 }
 h2 {
-    font-size: 5vmin;
+    font-size: 7vmin;
+    font-weight: bolder;
     padding: 20px;
+    text-align: center;
 }
-#voituresAnciennes {
+#recettes {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    background-color: #FBAF3F;
 }
-#voituresAnciennes div {
-    width: 100%;
+.figure-img {
+  background-image: url('../images/photo_sandwich.jpeg');
+  background-size: cover;
+  width: 100%;
+  height: 60%;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
-#voiture1 {
-    padding-right: 40px;
-    padding-bottom: 10px;
-    width: 100%;
-    max-width: 200px;
+.figure-img1 {
+  background-image: url('../images/photo_burger.jpg');
+  background-size: cover;
+  width: 100%;
+  height: 60%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.figure-img2 {
+  background-image: url('../images/photo_salade.jpeg');
+  background-size: cover;
+  width: 100%;
+  height: 60%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.figure-img3 {
+  background-image: url('../images/photo_dessert.jpeg');
+  background-size: cover;
+  width: 100%;
+  height: 60%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+h3 {
+  color: white;
+  padding: 10px;
+  margin: 0;
+}
+.especialites {
+  background-color: white;
+  width: 30%;
+  height: 70%;
+  margin: 10px;
 }
 #voiture2 {
     width: 100%;
@@ -94,9 +129,8 @@ h2 {
     width: 30%;
 }
 .texteMovement {
-    width: 70%;
     margin: auto;
-    padding: 30px;
+    padding: 10px;
 }
 .texteMovement img {
     width: 100%;
@@ -181,7 +215,7 @@ footer {
     width: 250px;
     padding-top: 190px;
   }
-  #voituresAnciennes div {
+  #recettes div {
     width: 40%;
   }
   #voiture1, #voiture2, #voiture3, #voiture4 {
@@ -201,6 +235,87 @@ footer {
 }
 
 /* ANIMATIONS*/
+
+@-webkit-keyframes bounceInUp {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 3000px, 0);
+    transform: translate3d(0, 3000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, -20px, 0);
+    transform: translate3d(0, -20px, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(0, 10px, 0);
+    transform: translate3d(0, 10px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, -5px, 0);
+    transform: translate3d(0, -5px, 0);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes bounceInUp {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 3000px, 0);
+    transform: translate3d(0, 3000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, -20px, 0);
+    transform: translate3d(0, -20px, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(0, 10px, 0);
+    transform: translate3d(0, 10px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, -5px, 0);
+    transform: translate3d(0, -5px, 0);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.bounceInUp {
+  -webkit-animation-name: bounceInUp;
+  animation-name: bounceInUp;
+}
 
 @keyframes montrer {
     0% {opacity: 0;}
