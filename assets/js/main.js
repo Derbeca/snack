@@ -93,3 +93,8 @@ sr.reveal('.icon',{
 	origin: 'left',
 });
 
+sr.reveal('h1',{
+	duration: 3000,
+	origin: 'right',
+});
+
