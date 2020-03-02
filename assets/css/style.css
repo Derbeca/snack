@@ -16,40 +16,46 @@ body {
   filter: drop-shadow(-3px -3px white);
   display: block;
   margin: 0 auto;
-  padding-top: 10%;
+  padding-top: 30%;
 }
-header {
-  display: flex;
-  justify-content: center;
-  height: 50vh;
+h1 {
+  text-align: center;
+}
+#sectionBlanc {
   background-color: #E6E7E8;
 }
 .logo {
-  width: 45%;
+  width: 50%;
   margin: auto;
 }
 #monstre {
   width: 30%;
   vertical-align: middle;
 }
-header div {
+#sectionBlanc div {
   display: table;
   height: 100%;
 }
-header span {
+#sectionBlanc span {
   display: table-cell;
   vertical-align: middle;
 }
-header h3 {
+#sectionBlanc h3 {
   color: black;
   font-size: 7vmin;
   text-align: center;
   margin: 0;
 }
+#burger {
+  width: 100%;
+}
+#fachade {
+  width: 100%;
+}
 h2 {
     font-size: 7vmin;
     font-weight: bolder;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
 }
 #recettes {
@@ -57,7 +63,7 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: #FBAF3F;
+    background-color: #F7931D;
 }
 .figure-img {
   background-image: url('../images/photo_sandwich.jpeg');
@@ -98,27 +104,12 @@ h3 {
 }
 .especialites {
   background-color: white;
-  width: 30%;
+  width: 40%;
   height: 70%;
   margin: 10px;
 }
-#voiture2 {
-    width: 100%;
-    padding-right: 50px;
-    padding-bottom: 10px;
-    max-width: 200px;
-}
-#voiture3 {
-    padding-left: 40px;
-    padding-bottom: 10px;
-    width: 100%;
-    max-width: 150px;
-}
-#voiture4 {
-    padding-left: 30px;
-    padding-bottom: 10px;
-    width: 100%;
-    max-width: 200px;
+#carte {
+  width: 50%;
 }
 #iconServices {
     display: flex;
@@ -140,21 +131,33 @@ p {
     font-size: 3.5vmin;
     padding: 5px;
 }
-#engranage {
+#sectionGris {
+  background-color: #404041;
+}
+#sectionGris h2 {
+  color: white;
+}
+#sectionOrange {
+  background-color: #F7931D;
+}
+#sectionGrisClaire {
+  background-color: #E6E7E8;
+}
+#livraison {
   padding: 10px;
 }
-#eng1 {
-    width: 20%;
+#liv {
+    width: 100%;
     max-width: 200px;
+    margin: 0 auto;
+    display: block;
 }
-#eng2 {
-    width: 40%;
-    max-width: 400px;
+#appel {
+  width: 40%;
+  margin: auto;
 }
-#eng3 {
-    width: 30%;
-    max-width: 300px;
-    margin-bottom: 20px;
+#btn-appel {
+  width: 100%;
 }
 footer {
     padding: 10px;
@@ -222,7 +225,7 @@ footer {
     width: 80%;
     padding: 10px;
   }
-  #engranage {
+  #livraison {
     width: 40%;
     margin: auto;
   }
